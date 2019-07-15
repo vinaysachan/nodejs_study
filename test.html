@@ -1,0 +1,32 @@
+<html>
+
+<head>
+
+</head>
+<script type="text/javascript">
+    class Human {
+        gender ='Male';
+        age =30;
+        printMyGender = () => {
+            return this.gender;
+        }
+    }
+    class Person extends Human {  
+        gender ='Female';
+        name ='Vinay sachan';
+        // age = 89 ;
+        printMyName = () => {
+            return this.name;
+        }
+        printMyAge = () => {
+            return this.age;
+        }
+    }
+    const person = new Person();
+    console.log(person.printMyAge());
+</script>
+<body>
+    <a href="#">Click Here</a>
+</body>
+
+</html>>
