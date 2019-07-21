@@ -9,3 +9,7 @@ console.log(a,b,c);
 setTimeout(() => {
     console.log('timer 1');
 },1000);
+
+let name = 'India' ;
+let ab = `My country is ${name}` ;
+console.log(ab);

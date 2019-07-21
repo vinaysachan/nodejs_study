@@ -11,3 +11,9 @@ class myCls {
 }
 
 module.exports = myCls ;
+
+// exports.team1 = team1;
+// exports.team2 = team2;
+
+
+
