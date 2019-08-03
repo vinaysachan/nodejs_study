@@ -1,22 +1,21 @@
 {
-  "name": "project1",
+  "name": "study",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js", 
-    "serve": "node app.js",
-    "asddasdasd": "node app.js",
-    "xyz": "node app.js",
-    "dev-serve" : "nodemon app.js"
+    "start": "node app.js",
+    "start-dev": "nodemon app.js"
   },
-  "author": "",
+  "author": "Vinay Sachan",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^1.19.1"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
     "express": "^4.17.1"
   }
 }

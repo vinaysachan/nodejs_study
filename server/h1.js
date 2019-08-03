@@ -13,7 +13,11 @@ const server    =   http.createServer((req,res) => {
         res.write('</html>');
         return res.end();
    }  else if(url==='/send' && method === 'POST') {
-       const body = [];
+       
+        const body = [];
+        //data 
+        //end
+        
         req.on('data', (chunk) => {
             console.log(chunk);
             body.push(chunk);

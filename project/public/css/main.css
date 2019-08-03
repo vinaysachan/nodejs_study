@@ -1,0 +1,14 @@
+.nav_list {
+    width: 100%;
+    background-color: lemonchiffon;
+    padding: 5px;
+}
+.nav_list li {
+    text-decoration: none;
+}
+.nav_list li a {
+    color: black;
+}
+.nav_list li.active a {
+    color: greenyellow;
+}
