@@ -5,22 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome to Shop</title>
+    <title>#{title}</title>
     <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
     <ul class="nav_list">
         <li><a href="/">Shop (Home Page)</a></li>
-        <li><a class="active" href="/admin/add-product">Add Product</a></li>
+        <li><a href="/admin/add-product">Add Product</a></li>
         <li><a href="https://www.google.com">Google</a></li>
         <li><a href="/pug_page">Pug Template Page</a></li>
     </ul>
-    <h1>This is Add Product Page</h1>
-    <form method="post" action="/admin/product">
-        <input type="text" name="title" />
-        <button type="submit">Submit</button>
-    </form>
+    <h1>#{heading}</h1>
 </body>
 
 </html>

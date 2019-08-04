@@ -2,18 +2,31 @@ const express = require('express');
 //Most Impoertant Line :- 
 const app = express();
 const bodyparser = require('body-parser');
-const pathPackage = require('path');
+const pathPackage = require('path'); //Npm Node Core Module
 const shopRoute = require('./routes/shop');
 const adminRoute =  require('./routes/admin');
-const utilPath = require('./util/path');
- 
 
+// const rout = require('./routes'); when we creatre index.js and all routes included in index.js 
 
+const utilPath = require('./util/main_module_dir');
+const pug = require('pug');
+let ejs = require('ejs');
 app.use(bodyparser.urlencoded());
+
+
+app.set('view engine', 'pug'); //After the view engine is set, you don’t have to specify the engine or load the template engine module in your app; Express loads the module internally, as shown below (for the above example).
+
+
+//dll
 
 //app => middleware ==>     app.use(path(optional), callbackFn,callbackFn,callbackFn..)
 
 //Public folder is not accable so make this folder static :-
+
+//=> actual public path==>  /var/vinay/www/study/nodejs_study/project/ (our project path) + 'public' (working directory)
+
+
+
 app.use(express.static(pathPackage.join(utilPath,'public')));
 
 app.use((req, res, next) => {
@@ -34,7 +47,6 @@ app.use((req, res, next) => {
 });
 
 app.use(shopRoute);
-
 app.use('/admin',adminRoute);
 
 app.use((req, res, next) => {
